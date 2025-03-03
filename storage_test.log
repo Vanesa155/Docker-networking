@@ -1,0 +1,89 @@
+2025-02-24 00:04:16 - 📦 Iniciando pruebas de rendimiento en Docker...
+2025-02-24 00:04:16 - ==============================================
+2025-02-24 00:04:16 - 🔹 Creando volumen de Docker...
+2025-02-24 00:04:16 - 🔹 Creando carpeta para Bind Mount en: /home/gloria/docker_test_data
+2025-02-24 00:04:16 - 🚀 Ejecutando pruebas de almacenamiento con 100 MB...
+2025-02-24 00:04:16 - 📊 Probando Volumen de Docker...
+2025-02-24 00:04:17 - ⏳ Tiempo de escritura en Volumen de Docker: dd: invalid argument 'dsync' to 'oflag'
+Command exited with non-zero status 1
+0.00 segundos
+2025-02-24 00:04:17 - 📊 Probando Bind Mount (Carpeta del host)...
+2025-02-24 00:04:19 - ⏳ Tiempo de escritura en Bind Mount (Carpeta del host): dd: invalid argument 'dsync' to 'oflag'
+Command exited with non-zero status 1
+0.00 segundos
+2025-02-24 00:04:19 - 📊 Probando tmpfs (RAM)...
+2025-02-24 00:04:20 - ⏳ Tiempo de escritura en tmpfs (RAM): dd: invalid argument 'dsync' to 'oflag'
+Command exited with non-zero status 1
+0.00 segundos
+2025-02-24 00:04:20 - 🧹 Limpiando archivos y volúmenes...
+2025-02-24 00:04:20 - ✅ Pruebas completadas.
+2025-02-24 00:05:20 - 📦 Iniciando pruebas de rendimiento en Docker...
+2025-02-24 00:05:20 - ==============================================
+2025-02-24 00:05:20 - 🔹 Creando volumen de Docker...
+2025-02-24 00:05:20 - 🔹 Creando carpeta para Bind Mount en: /home/gloria/docker_test_data
+2025-02-24 00:05:20 - 🚀 Ejecutando pruebas de almacenamiento con 100 MB...
+2025-02-24 00:05:20 - 📊 Probando Volumen de Docker...
+2025-02-24 00:05:20 - ⏳ Tiempo de escritura en Volumen de Docker: dd: invalid argument 'fdatasync' to 'conv'
+Command exited with non-zero status 1
+0.00 segundos
+2025-02-24 00:05:20 - 📊 Probando Bind Mount (Carpeta del host)...
+2025-02-24 00:05:21 - ⏳ Tiempo de escritura en Bind Mount (Carpeta del host): dd: invalid argument 'fdatasync' to 'conv'
+Command exited with non-zero status 1
+0.00 segundos
+2025-02-24 00:05:21 - 📊 Probando tmpfs (RAM)...
+2025-02-24 00:05:21 - ⏳ Tiempo de escritura en tmpfs (RAM): dd: invalid argument 'fdatasync' to 'conv'
+Command exited with non-zero status 1
+0.00 segundos
+2025-02-24 00:05:21 - 🧹 Limpiando archivos y volúmenes...
+2025-02-24 00:05:22 - ✅ Pruebas completadas.
+2025-02-24 00:06:32 - 📦 Iniciando pruebas de rendimiento en Docker...
+2025-02-24 00:06:32 - ==============================================
+2025-02-24 00:06:33 - 🔹 Creando volumen de Docker...
+2025-02-24 00:06:33 - 🔹 Creando carpeta para Bind Mount en: /home/gloria/docker_test_data
+2025-02-24 00:06:33 - 🚀 Ejecutando pruebas de almacenamiento con 100 MB...
+2025-02-24 00:06:33 - 📊 Probando Volumen de Docker...
+Unable to find image 'debian:latest' locally
+latest: Pulling from library/debian
+a492eee5e559: Already exists
+Digest: sha256:4abf773f2a570e6873259c4e3ba16de6c6268fb571fd46ec80be7c67822823b3
+Status: Downloaded newer image for debian:latest
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+debconf: delaying package configuration, since apt-utils is not installed
+2025-02-24 00:06:41 - ⏳ Tiempo de escritura en Volumen de Docker: 2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.340191 s, 308 MB/s
+0.34 segundos
+2025-02-24 00:06:41 - 📊 Probando Bind Mount (Carpeta del host)...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+debconf: delaying package configuration, since apt-utils is not installed
+2025-02-24 00:06:46 - ⏳ Tiempo de escritura en Bind Mount (Carpeta del host): 2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.243783 s, 430 MB/s
+0.24 segundos
+2025-02-24 00:06:46 - 📊 Probando tmpfs (RAM)...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+debconf: delaying package configuration, since apt-utils is not installed
+2025-02-24 00:06:50 - ⏳ Tiempo de escritura en tmpfs (RAM): 2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.0333063 s, 3.1 GB/s
+0.03 segundos
+2025-02-24 00:06:50 - 🧹 Limpiando archivos y volúmenes...
+2025-02-24 00:06:50 - ✅ Pruebas completadas.
